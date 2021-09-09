@@ -118,5 +118,5 @@ fit_underthehood <- function(data,
     names(pars) <- c(paste0("q", 1:C), paste0("s", 1:C), paste0("k", 1:C))
   }
 
-  list(summary=data.frame(model=model, N=N, C=C, K=m, convergence=conv, logL=logL), parameters=pars)
+  list(summary=data.frame(model=model, N=N, C=C, K=m, convergence=conv, logL=logL), coef=pars)
 }

@@ -1,6 +1,6 @@
 Package: cre2
 Title: Constant Rate Effects
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person(given = "Henri",
            family = "Kauhanen",

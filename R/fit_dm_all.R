@@ -29,10 +29,10 @@ fit_dm_all <- function(data,
 
   outs <- NULL
   outp <- vector("list", length(out))
-  names(outp) <- c("CRH", "qCRH", "VRH", "qVRH", "BRH")
+  names(outp) <- models
   for (i in 1:length(out)) {
     outs <- rbind(outs, out[[i]]$summary)
-    outp[[i]] <- out[[i]]$parameters
+    outp[[i]] <- out[[i]]$coef
   }
 
   list(summary=outs, coef=outp)
